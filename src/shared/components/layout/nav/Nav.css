@@ -1,0 +1,10 @@
+.nav-separator {
+  width: 100%;
+  background-color: rgb(139, 136, 161);
+  height: 1px;
+}
+
+.nav-container {
+  position: absolute;
+  
+}
