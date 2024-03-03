@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv'
 class ApiService {
 
   //-------------------------------------------------------//
-  //------------------VARIABLES GLOBALES-------------------//
+  //------------------GLOBAL VARIABLES---------------------//
   //-------------------------------------------------------//
 
   URL = `${process.env.API_DEVELOPMENT}${process.env.API_VERSION}`
@@ -13,7 +13,7 @@ class ApiService {
   //-------------------------------------------------------//
 
   login = async () => {
-
+    
   }
 }
 
