@@ -1,0 +1,45 @@
+.relation-card-container {
+    min-height: 320px;
+    min-width: 250px;
+    max-height: 320px;
+    max-width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.relation-card-image {
+    height: 60%;
+    width: auto;
+}
+
+.relation-card-spinner-container {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.relation-card-buttons-container {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.relation-card-span {
+    display: flex;
+    flex: 7;
+    margin-right: 10px;
+}
+
+.relation-card-button {
+    background-color: #d0e1d3;
+    font-weight: bold;
+}
