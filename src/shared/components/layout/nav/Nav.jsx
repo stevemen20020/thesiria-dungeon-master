@@ -32,8 +32,8 @@ const Nav = () => {
           
           <MenuItem icon={<MapOutlinedIcon />} onClick={() => navigate('/map')}>Mapa</MenuItem>
           <MenuItem icon={<PeopleOutlinedIcon />} onClick={() => navigate('/players')}>Jugadores</MenuItem>
-          <MenuItem icon={<ShieldOutlinedIcon />}>Batalla</MenuItem>
-          <MenuItem icon={<FavoriteBorderOutlinedIcon />}>Diario</MenuItem>
+          <MenuItem icon={<ShieldOutlinedIcon />} >Batalla</MenuItem>
+          <MenuItem icon={<FavoriteBorderOutlinedIcon />} onClick={() => navigate('/diary')}>Diario</MenuItem>
           <MenuItem icon={<AutoFixHighOutlinedIcon />}>Ataques y Hechizos</MenuItem>
           <MenuItem icon={<BugReportOutlinedIcon />}>Npc's y Monstruos</MenuItem>
         </Menu>
