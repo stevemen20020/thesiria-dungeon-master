@@ -74,7 +74,9 @@ const Diary = () => {
   }
 
   const getAllNpc = async () => {
+    console.log('getting npcs')
     const response = await apiService.getAllNpc()
+    console.log(response)
     const filtered = response.result.filter(npc => !relationForFiltering.some(relation => relation.npc_id === npc.id))
     setAllNpc(filtered)
   }

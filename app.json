@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "thesiria-dungeon-master",
+    "slug": "thesiria-dungeon-master",
+    "version": "0.0.0",
+    "sdkVersion": "50.0.0",
+    "platforms": [],
+    "ios": {
+      "bundleIdentifier": "thesiria"
+    }
+  }
+}

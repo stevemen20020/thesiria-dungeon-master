@@ -4,7 +4,8 @@ class ApiService {
   //------------------GLOBAL VARIABLES---------------------//
   //-------------------------------------------------------//
 
-  URL = `${import.meta.env.VITE_API_DEVELOPMENT}${import.meta.env.VITE_API_VERSION_1}`
+  // URL = `${import.meta.env.VITE_API_DEVELOPMENT}${import.meta.env.VITE_API_VERSION_1}`
+  URL = `${import.meta.env.VITE_API_PRODUCTION}${import.meta.env.VITE_API_VERSION_1}`
 
   endpoints = {
     playable_character:'playable_character',
@@ -78,6 +79,7 @@ class ApiService {
 
   getMissionJournalByPlayerId = async(playable_character_id) => {
     try {
+      console.log(`${this.URL}${this.endpoints.mission_journal}?playable_character_id=${playable_character_id}`)
       const response = await fetch(`${this.URL}${this.endpoints.mission_journal}?playable_character_id=${playable_character_id}`, {
         method: 'GET'
       })
@@ -148,6 +150,7 @@ class ApiService {
 
   getPlayableCharacterJournalByPlayerId = async(playable_character_id) => {
     try {
+      console.log(`${this.URL}${this.endpoints.playable_character_journal}?playable_character_id=${playable_character_id}`)
       const response = await fetch(`${this.URL}${this.endpoints.playable_character_journal}?playable_character_id=${playable_character_id}`, {
         method: 'GET'
       })
