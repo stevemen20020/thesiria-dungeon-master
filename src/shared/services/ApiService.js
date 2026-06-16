@@ -5,7 +5,7 @@ class ApiService {
   //-------------------------------------------------------//
 
   // URL = `${import.meta.env.VITE_API_DEVELOPMENT}${import.meta.env.VITE_API_VERSION_1}`
-  URL = `${import.meta.env.VITE_API_PRODUCTION}${import.meta.env.VITE_API_VERSION_1}`
+  URL = `${import.meta.env.VITE_API_DEVELOPMENT}${import.meta.env.VITE_API_VERSION_1}`
 
   endpoints = {
     playable_character:'playable_character',
@@ -22,14 +22,17 @@ class ApiService {
 
   getAllPlayers = async() => {
     try {
+      console.log('HERE I BE')
       const response = await fetch(`${this.URL}${this.endpoints.playable_character}`, {
         method: 'GET',
       });
+      console.log(response)
       if (!response.ok) {
         throw { status: response.status, message:'Error' };
       }
       return response.json()
     } catch (error) {
+      console.log('HERE I REMAIN')
       return error;
     }
   }
