@@ -1,0 +1,14 @@
+import { structures_type } from "../../Enums";
+import { type TilesEntity } from "../tiles/tiles.entity";
+export interface StructuresEntity {
+  id: string;
+  name: string;
+  description: string;
+  difficulty: string;
+  locationId?: string;
+  horizontalTiles: string;
+  verticalTiles: string;
+  type?: structures_type;
+  tilesStructuresLocationIdTotiles?: TilesEntity;
+  tilesTilesStructureIdTostructures?: TilesEntity[];
+}

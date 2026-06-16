@@ -1,0 +1,37 @@
+import { armor_rarity } from "../../Enums";
+import type { ElementsEntity } from "../elements/elements.entity";
+import type { SkillUsageEntity } from "../skill_usage/skillUsage.entity";
+import type { TilesEntity } from "../tiles/tiles.entity";
+import type { ObjectsEntity } from "../objects/objects.entity";
+import type { InventoryArmorEntity } from "../inventory_armor/inventoryArmor.entity";
+import type { NpcEntity } from "../npc/npc.entity";
+export interface ArmorEntity {
+  id: string;
+  name: string;
+  elementId?: string;
+  defensivePointsLvl1: string;
+  defensivePointsLvl2: string;
+  defensivePointsLvl3: string;
+  defensivePointsLvl4: string;
+  defensivePointsLvl5: string;
+  upgradeItemId: string;
+  upgradeCostLvl2: string;
+  upgradeCostLvl3: string;
+  upgradeCostLvl4: string;
+  upgradeCostLvl5: string;
+  rarity: armor_rarity;
+  locationId: string;
+  skillUsage?: string;
+  diceNeeded?: string;
+  found?: string;
+  priceSell: string;
+  priceBuy: string;
+  description: string;
+  image?: string;
+  elements?: ElementsEntity;
+  skillUsageArmorSkillUsageToskillUsage?: SkillUsageEntity;
+  tiles?: TilesEntity;
+  objects?: ObjectsEntity;
+  inventoryArmor?: InventoryArmorEntity[];
+  npc?: NpcEntity[];
+}
