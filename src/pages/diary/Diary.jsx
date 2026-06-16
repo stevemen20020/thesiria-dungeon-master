@@ -32,6 +32,7 @@ const Diary = () => {
 
   useEffect(() => {
     const fetchAllPlayableCharacters = async () => {
+      console.log('HERE I AM')
       const playableCharacters = await apiService.getAllPlayers()
       setPlayableCharacters(playableCharacters.result)
     }
@@ -74,7 +75,9 @@ const Diary = () => {
   }
 
   const getAllNpc = async () => {
+    console.log('getting npcs')
     const response = await apiService.getAllNpc()
+    console.log(response)
     const filtered = response.result.filter(npc => !relationForFiltering.some(relation => relation.npc_id === npc.id))
     setAllNpc(filtered)
   }
@@ -170,7 +173,7 @@ const Diary = () => {
           <h4 className='diary-players-title'>Jugadores</h4>
         </section>
         <section className='diary-players-list'>
-          {playableCharacters !== null && playableCharacters.map((character, index) => (
+          {playableCharacters && playableCharacters.map((character, index) => (
             <div className='diary-player-pickable-name' onClick={() => handleCharacterChange(character)} key={index}>
               <span >{character.name}</span>
             </div>
