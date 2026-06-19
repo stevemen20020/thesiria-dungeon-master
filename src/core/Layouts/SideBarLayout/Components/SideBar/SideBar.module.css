@@ -1,0 +1,88 @@
+/* Sidebar.module.css */
+
+.sidebar {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  height: 100vh;
+
+  background: #121212;
+
+  transition: width 0.2s ease;
+
+  overflow: hidden;
+}
+
+.expanded {
+  width: 260px;
+}
+
+.collapsed {
+  width: 72px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 16px;
+}
+
+.menuButton {
+  background: transparent;
+  border: none;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.logo {
+  width: 150px;
+  object-fit: contain;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  padding: 8px;
+}
+
+.item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  transition: background 0.2s ease;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.label {
+  white-space: nowrap;
+}
