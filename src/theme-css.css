@@ -1,0 +1,81 @@
+/* AUTO-GENERATED FILE - DO NOT EDIT. TO ADD NEW STYLES, GO TO src/shared/Constants/Tokens.ts */
+:root {
+	 /* COLORS */
+	--primary: #dd2d4a;
+	--primaryStrong: #880d1e;
+	--primarySoft: #f26a8d;
+	--secondary: #cbeef3;
+	--accent: #f49cbb;
+	--background: #fff;
+	--surface: #f9d3e1;
+	--surfaceAlt: #cbeef3;
+	--textPrimary: #212529;
+	--textSecondary: #dd2d4a;
+	--textOnPrimary: #fff;
+	--border: #f49cbb;
+	--divider: rgba(33, 37, 41, 0.1);
+	--success: #2ecc71;
+	--warning: #f1c40f;
+	--error: #e63946;
+	--overlay: rgba(0,0,0,0.4);
+	--disabled: #bfbfbf;
+	--dark_border: #3f4142;
+
+	 /* FONT SIZES */
+	--fs-xs: 0.75rem;
+	--fs-s: 0.87rem;
+	--fs-m: 1rem;
+	--fs-l: 1.12rem;
+	--fs-xl: 1.25rem;
+	--fs-xxl: 1.35rem;
+	--fs-xxxl: 1.5rem;
+
+	 /* FONT WEIGTHS */
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+
+	 /* LINE HEIGHTS */
+	--lh-xs: 0.2rem;
+	--lh-s: 0.4rem;
+	--lh-m: 0.6rem;
+	--lh-l: 0.8rem;
+	--lh-xl: 1rem;
+
+	 /* OPACITY */
+	--op-disabled: 0.5;
+	--op-muted: 0.7;
+	--op-full: 1;
+
+	 /* RADIUS */
+	--rd-xs: 2px;
+	--rd-s: 5px;
+	--rd-m: 10px;
+	--rd-l: 15px;
+	--rd-xl: 20px;
+	--rd-xxl: 30px;
+	--rd-xxxl: 40px;
+	--rd-round: 9999px;
+
+	 /* SPACING */
+	--sp-xxxs: 0.05rem;
+	--sp-xxs: 0.10rem;
+	--sp-xs: 0.25rem;
+	--sp-s: 0.5rem;
+	--sp-m: 0.75rem;
+	--sp-l: 1rem;
+	--sp-xl: 1.5rem;
+	--sp-xxl: 2rem;
+	--sp-xxxl: 2.5rem;
+
+	 /* Z INDEX */
+	--z-base: 0;
+	--z-dropdown: 10;
+	--z-sticky: 100;
+	--z-overlay: 1000;
+	--z-modal: 1100;
+	--z-toast: 1200;
+}
+/* if u read dis u gay */
