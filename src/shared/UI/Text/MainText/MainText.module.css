@@ -1,0 +1,65 @@
+.base {
+}
+
+/* Variants */
+
+.body {
+}
+
+.label {
+  font-weight: 700;
+  color: var(--textSecondary);
+}
+
+.caption {
+  color: var(--textSecondary);
+}
+
+.eyebrow {
+}
+
+/* Sizes */
+
+.xs {
+  font-size: var(--fs-xs);
+}
+
+.sm {
+  font-size: var(--fs-s);
+}
+
+.md {
+  font-size: var(--fs-m);
+}
+
+.lg {
+  font-size: var(--fs-l);
+}
+
+.xl {
+  font-size: var(--fs-xl);
+}
+
+/* Weights */
+
+.normal {
+  font-weight: var(--fw-regular);
+}
+
+.medium {
+  font-weight: var(--fw-medium);
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+/* Modifiers */
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}

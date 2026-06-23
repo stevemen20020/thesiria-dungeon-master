@@ -1,0 +1,60 @@
+.card {
+  width: 100%;
+  transition:
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    transform 150ms ease;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-s);
+}
+
+/* ==================== */
+/* SIZES                */
+/* ==================== */
+
+.s {
+  padding: var(--sp-s);
+  border-radius: var(--rd-s);
+}
+
+.m {
+  padding: var(--sp-m);
+  border-radius: var(--rd-m);
+}
+
+.l {
+  padding: var(--sp-l);
+  border-radius: var(--rd-l);
+}
+
+/* ==================== */
+/* VARIANTS             */
+/* ==================== */
+
+.filled {
+  background: var(--surface);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.outline {
+  background: var(--background);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ghost {
+  background: transparent;
+}
+
+/* ==================== */
+/* OPTIONAL INTERACTION */
+/* ==================== */
+
+.card:hover {
+  transform: translateY(-1px);
+}

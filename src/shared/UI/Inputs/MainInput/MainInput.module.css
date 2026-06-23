@@ -1,0 +1,127 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-xxs);
+}
+
+.label {
+  font-size: var(--fs-s);
+  color: var(--textPrimary);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+
+/* ==================== */
+/* VARIANTS             */
+/* ==================== */
+
+.clear {
+  border-bottom: 1px solid var(--dark_border);
+  padding-block: var(--sp-xxs);
+}
+
+.filled {
+  border: 1px solid transparent;
+  border-radius: var(--rd-m);
+  padding-inline: var(--sp-s);
+  padding-block: var(--sp-xs);
+  background-color: var(--surface);
+}
+
+/* ==================== */
+/* FOCUS STATES         */
+/* ==================== */
+
+.clear.focused {
+  border-bottom-color: var(--primaryStrong);
+}
+
+.filled.focused {
+  border-color: var(--secondary);
+}
+
+/* ==================== */
+/* ERROR STATE          */
+/* ==================== */
+
+.errorState {
+  border-color: var(--error) !important;
+  border-bottom-color: var(--error) !important;
+}
+
+/* ==================== */
+/* DISABLED             */
+/* ==================== */
+
+.disabled {
+  opacity: var(--op-disabled);
+}
+
+.disabled .input {
+  cursor: not-allowed;
+}
+
+/* ==================== */
+/* INPUT                */
+/* ==================== */
+
+.input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: var(--dark_border);
+  font-size: var(--fs-m);
+}
+
+.input:focus {
+  color: var(--textPrimary);
+}
+
+.input::placeholder {
+  color: var(--disabled);
+}
+
+/* ==================== */
+/* ICONS                */
+/* ==================== */
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-inline: var(--sp-xxs);
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  color: var(--textPrimary);
+}
+
+/* ==================== */
+/* ERROR                */
+/* ==================== */
+
+.error {
+  color: var(--error);
+  font-size: var(--fs-xs);
+}
